@@ -8,7 +8,7 @@
 
 import Foundation
 
-
+//This class provides an interface for executing server API requests.
 class APIClient {
     static func getUsers(completion: @escaping ([UserModel]?, Error?) -> Void ) {
         APIClient.request(route: APIRouter.getUsers, completion: completion)

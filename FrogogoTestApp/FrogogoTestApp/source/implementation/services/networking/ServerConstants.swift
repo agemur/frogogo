@@ -13,6 +13,7 @@ protocol ServerProtocol {
     static var domenURL: String { get }
 }
 
+//This structure allows you to create various configurations for server settings.
 struct ServerConstants {
     static var currentServer: ServerProtocol.Type {
         #if DEBUG

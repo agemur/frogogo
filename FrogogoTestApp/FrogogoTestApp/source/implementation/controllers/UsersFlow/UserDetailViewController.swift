@@ -117,7 +117,7 @@ class UserDetailViewController: BaseViewController {
             self.avatarImageView.image = UIImage(named: "placeholder")
             return
         }
-        self.avatarImageView.downloaded(from: url, contentMode: .scaleAspectFill) { (isSuccess) in
+        self.avatarImageView.download(from: url, contentMode: .scaleAspectFill) { (isSuccess) in
             guard !isSuccess else { return }
             self.avatarImageView.image = UIImage(named: "placeholder")
         }
@@ -183,7 +183,7 @@ class UserDetailViewController: BaseViewController {
             self.avatarImageView.image = UIImage(named: "placeholder")
             return
         }
-        avatarImageView.downloaded(
+        avatarImageView.download(
             from: url,
             contentMode: .scaleAspectFill
         ) {[weak self] (isSuccess) in

@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Base class for all ViewControllers
 class BaseViewController: UIViewController {
     @IBOutlet private weak var scrollView: UIScrollView?
     @IBInspectable private var canEndEditingByTap: Bool = true
@@ -42,6 +43,7 @@ class BaseViewController: UIViewController {
         }
     }
     
+    //The method determines the state of the keyboard and makes a change for the scrollview to work correctly.
     @objc func keyboardNotification(notification: NSNotification) {
         guard let userInfo = notification.userInfo else { return }
         let endFrame = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue

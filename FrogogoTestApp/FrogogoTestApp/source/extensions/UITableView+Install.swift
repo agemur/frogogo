@@ -19,6 +19,7 @@ enum DataRepositoryState {
     case notInitialize
 }
 
+//Extension for empty state
 extension UITableView {
     func dataStateDidChanged(_ state: DataRepositoryState) {
         switch state {
@@ -40,6 +41,7 @@ extension UITableView {
     }
 }
 
+//Extension for configuration UITableView
 extension UITableView {
     func setupTableView(
         size: TableViewSize = .automatic,

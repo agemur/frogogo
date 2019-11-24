@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Class for storing and canceling requests
 class RequestQueueService<T: Hashable> {
     
     private var requestDic = [T: URLSessionTask]()

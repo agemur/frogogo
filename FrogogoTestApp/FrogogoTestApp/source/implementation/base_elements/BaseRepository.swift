@@ -8,6 +8,7 @@
 
 import Foundation
 
+//Protocol defining interface for the model storage class
 protocol Repository: class {
     associatedtype Model
     

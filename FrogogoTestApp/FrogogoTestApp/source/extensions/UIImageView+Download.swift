@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImageView {
     @discardableResult
-    func downloaded(
+    func download(
         from url: URL,
         contentMode mode: UIView.ContentMode = .scaleAspectFill,
         completion: ((Bool)->())? = nil
@@ -35,8 +35,8 @@ extension UIImageView {
         return request
     }
     
-    func downloaded(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
+    func download(from link: String, contentMode mode: UIView.ContentMode = .scaleAspectFill) {
         guard let url = URL(string: link) else { return }
-        downloaded(from: url, contentMode: mode)
+        download(from: url, contentMode: mode)
     }
 }

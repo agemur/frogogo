@@ -113,7 +113,7 @@ extension UsersViewController: UITableViewDataSource {
             cell.activityLoad.isHidden = false
             cell.activityLoad.startAnimating()
             
-            let request = cell.avatarImageView.downloaded(
+            let request = cell.avatarImageView.download(
                 from: url,
                 contentMode: .scaleAspectFill
             ) { [weak self] (isSuccess) in

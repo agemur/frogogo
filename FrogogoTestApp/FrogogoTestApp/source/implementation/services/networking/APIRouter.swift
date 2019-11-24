@@ -19,6 +19,8 @@ protocol URLRequestConvertible {
     func request(url: URL) -> URLRequest?
 }
 
+//This enum configure server API request
+
 enum APIRouter: URLRequestConvertible {
         
     case getUsers

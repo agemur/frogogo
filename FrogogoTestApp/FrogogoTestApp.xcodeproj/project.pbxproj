@@ -23,7 +23,6 @@
 		CE0507AF2388109A00A5890C /* ReuseIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507AE2388109A00A5890C /* ReuseIdentifiers.swift */; };
 		CE0507B22388124B00A5890C /* ServerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507B12388124B00A5890C /* ServerConstants.swift */; };
 		CE0507B5238813B100A5890C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507B4238813B100A5890C /* UserModel.swift */; };
-		CE0507B72388158D00A5890C /* DateFormatter+Customize.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507B62388158D00A5890C /* DateFormatter+Customize.swift */; };
 		CE0507B92388161D00A5890C /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507B82388161D00A5890C /* APIRouter.swift */; };
 		CE0507BB2388197F00A5890C /* Encodable+ToDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507BA2388197F00A5890C /* Encodable+ToDictionary.swift */; };
 		CE0507BD23881AA500A5890C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507BC23881AA500A5890C /* APIClient.swift */; };
@@ -32,7 +31,6 @@
 		CE0507C32388BBDA00A5890C /* UIImageView+Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507C22388BBDA00A5890C /* UIImageView+Download.swift */; };
 		CE0507C52388C94700A5890C /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507C42388C94700A5890C /* UserDetailViewController.swift */; };
 		CE0507FD238A7CEC00A5890C /* ValidatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507FC238A7CEC00A5890C /* ValidatorService.swift */; };
-		CE0507FF238A80E200A5890C /* String+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0507FE238A80E200A5890C /* String+Validation.swift */; };
 		CE050801238A8BD800A5890C /* UITextField+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050800238A8BD800A5890C /* UITextField+Error.swift */; };
 		CE050803238AB2C800A5890C /* UsersRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050802238AB2C800A5890C /* UsersRepository.swift */; };
 		CE050805238AB75A00A5890C /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE050804238AB75A00A5890C /* BaseRepository.swift */; };
@@ -81,7 +79,6 @@
 		CE0507AE2388109A00A5890C /* ReuseIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseIdentifiers.swift; sourceTree = "<group>"; };
 		CE0507B12388124B00A5890C /* ServerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConstants.swift; sourceTree = "<group>"; };
 		CE0507B4238813B100A5890C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		CE0507B62388158D00A5890C /* DateFormatter+Customize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Customize.swift"; sourceTree = "<group>"; };
 		CE0507B82388161D00A5890C /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		CE0507BA2388197F00A5890C /* Encodable+ToDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+ToDictionary.swift"; sourceTree = "<group>"; };
 		CE0507BC23881AA500A5890C /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
@@ -90,7 +87,6 @@
 		CE0507C22388BBDA00A5890C /* UIImageView+Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Download.swift"; sourceTree = "<group>"; };
 		CE0507C42388C94700A5890C /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		CE0507FC238A7CEC00A5890C /* ValidatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorService.swift; sourceTree = "<group>"; };
-		CE0507FE238A80E200A5890C /* String+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Validation.swift"; sourceTree = "<group>"; };
 		CE050800238A8BD800A5890C /* UITextField+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Error.swift"; sourceTree = "<group>"; };
 		CE050802238AB2C800A5890C /* UsersRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersRepository.swift; sourceTree = "<group>"; };
 		CE050804238AB75A00A5890C /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
@@ -215,11 +211,9 @@
 				CE0507AC23880DD800A5890C /* UITableView+Install.swift */,
 				CE0507BA2388197F00A5890C /* Encodable+ToDictionary.swift */,
 				CE0507AE2388109A00A5890C /* ReuseIdentifiers.swift */,
-				CE0507B62388158D00A5890C /* DateFormatter+Customize.swift */,
 				CE0507BE238824F500A5890C /* NSError+Networking.swift */,
 				CE0507C0238826E300A5890C /* UIViewController+Alert.swift */,
 				CE0507C22388BBDA00A5890C /* UIImageView+Download.swift */,
-				CE0507FE238A80E200A5890C /* String+Validation.swift */,
 				CE050800238A8BD800A5890C /* UITextField+Error.swift */,
 			);
 			path = extensions;
@@ -459,10 +453,8 @@
 				CE0507BF238824F500A5890C /* NSError+Networking.swift in Sources */,
 				CE050801238A8BD800A5890C /* UITextField+Error.swift in Sources */,
 				CE0507AF2388109A00A5890C /* ReuseIdentifiers.swift in Sources */,
-				CE0507FF238A80E200A5890C /* String+Validation.swift in Sources */,
 				CE0507662388087A00A5890C /* AppDelegate.swift in Sources */,
 				CE0507AD23880DD800A5890C /* UITableView+Install.swift in Sources */,
-				CE0507B72388158D00A5890C /* DateFormatter+Customize.swift in Sources */,
 				CE0507AB23880CB400A5890C /* UserTableViewCell.swift in Sources */,
 				CE0507B5238813B100A5890C /* UserModel.swift in Sources */,
 				CE0507BB2388197F00A5890C /* Encodable+ToDictionary.swift in Sources */,
