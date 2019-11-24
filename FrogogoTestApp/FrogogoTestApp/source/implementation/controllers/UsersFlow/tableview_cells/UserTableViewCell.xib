@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="UserTableViewCell" customModule="FrogogoTestApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z7R-93-oqs">
+                    <rect key="frame" x="18" y="15" width="49.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Z7R-93-oqs" secondAttribute="height" multiplier="1:1" id="O8x-j0-mF8"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQq-Tr-Jkj">
+                    <rect key="frame" x="77.5" y="15" width="320.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                    <color key="textColor" red="0.1176470588" green="0.53333333329999999" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6K-Ou-cNv">
+                    <rect key="frame" x="77.5" y="47.5" width="320.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="ENW-X7-gZ3">
+                    <rect key="frame" x="32" y="30" width="20" height="20"/>
+                    <color key="color" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ENW-X7-gZ3" firstAttribute="centerY" secondItem="Z7R-93-oqs" secondAttribute="centerY" id="CdL-cG-ZXt"/>
+                <constraint firstItem="Z7R-93-oqs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="18" id="Co0-Sl-7UJ"/>
+                <constraint firstItem="A6K-Ou-cNv" firstAttribute="trailing" secondItem="PQq-Tr-Jkj" secondAttribute="trailing" id="ENe-J6-0as"/>
+                <constraint firstItem="PQq-Tr-Jkj" firstAttribute="leading" secondItem="Z7R-93-oqs" secondAttribute="trailing" constant="10" id="GSa-9U-lLj"/>
+                <constraint firstItem="Z7R-93-oqs" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.12" id="IyC-7d-6bQ"/>
+                <constraint firstItem="Z7R-93-oqs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="VcQ-hc-xNE"/>
+                <constraint firstItem="A6K-Ou-cNv" firstAttribute="leading" secondItem="PQq-Tr-Jkj" secondAttribute="leading" id="WhV-pB-CsF"/>
+                <constraint firstItem="PQq-Tr-Jkj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="XFv-87-MLR"/>
+                <constraint firstAttribute="trailing" secondItem="PQq-Tr-Jkj" secondAttribute="trailing" constant="16" id="hMw-em-LJi"/>
+                <constraint firstItem="ENW-X7-gZ3" firstAttribute="centerX" secondItem="Z7R-93-oqs" secondAttribute="centerX" id="hib-Gs-dgG"/>
+                <constraint firstItem="A6K-Ou-cNv" firstAttribute="top" secondItem="PQq-Tr-Jkj" secondAttribute="bottom" constant="12" id="keS-GM-c1x"/>
+                <constraint firstAttribute="bottom" secondItem="A6K-Ou-cNv" secondAttribute="bottom" constant="12" id="sc6-d3-7Lp"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityLoad" destination="ENW-X7-gZ3" id="qUA-01-Uwm"/>
+                <outlet property="avatarImageView" destination="Z7R-93-oqs" id="N9w-Ii-YfM"/>
+                <outlet property="emailLabel" destination="A6K-Ou-cNv" id="3pS-1H-QMz"/>
+                <outlet property="nameLabel" destination="PQq-Tr-Jkj" id="z1h-Ys-0yj"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="50.892857142857139"/>
+        </view>
+    </objects>
+</document>
